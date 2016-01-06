@@ -31,5 +31,6 @@ sudo -u dontsuck -c 'mkdir ~/steamcmd ;\
         app_update 343050 validate ;\
         quit'
 ~~~~
-#### exeeeeeecutable will live at: ~dontsuck/app/DST/bin/dontstarve_dedicated_server_nullrenderer
+#### exeeeeeecutable will live at:
+`~dontsuck/app/DST/bin/dontstarve_dedicated_server_nullrenderer`
 
