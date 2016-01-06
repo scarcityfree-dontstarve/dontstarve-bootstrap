@@ -20,16 +20,19 @@ apt-get install -y lib32gcc1 lib32stdc++6 libcurl4-gnutls-dev:i386
 ###### steamcmd (using a proper source. as provided from https://developer.valvesoftware.com/wiki/SteamCMD
 ~~~~
 chmod a+rw `tty`
-sudo -u dontsuck -c 'mkdir ~/steamcmd ;\
-    cd ~/steamcmd ;\
-    wget http://media.steampowered.com/installer/steamcmd_linux.tar.gz ;\
-    tar -xvzf steamcmd_linux.tar.gz ;\
-    mkdir -p /home/dontsuck/app ;\
-    ./steamcmd.sh ;\
-        login anonymous ;\
-        force_install_dir /home/dontsuck/app ;\
-        app_update 343050 validate ;\
-        quit'
+~~~~
+###### as dontsuck user
+~~~~
+mkdir ~/steamcmd
+cd ~/steamcmd
+wget http://media.steampowered.com/installer/steamcmd_linux.tar.gz
+tar -xvzf steamcmd_linux.tar.gz
+mkdir -p /home/dontsuck/app
+./steamcmd.sh
+    login anonymous
+    force_install_dir /home/dontsuck/app
+    app_update 343050 validate
+    quit
 ~~~~
 #### exeeeeeecutable will live at:
 `~dontsuck/app/DST/bin/dontstarve_dedicated_server_nullrenderer`
